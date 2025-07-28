@@ -1,0 +1,40 @@
+
+    body { font-family: Arial, sans-serif;
+           background: #f8f8f8;
+           margin: 0; }
+
+    .container { 
+        max-width: 400px; margin: 30px auto; 
+        background: #fff; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 8px #ddd;
+        padding: 20px; }
+
+    h1 {
+         text-align: center; 
+         color: #e63946; }
+
+    .item { 
+         margin-bottom: 20px; }
+
+    .nome {
+         font-size: 1.1em;
+         font-weight: bold; }
+
+    .preco { 
+        color: #e63946; }
+
+    button { 
+        background: #e63946;
+        color: #fff;
+        border: none; 
+        padding: 6px 12px; 
+        border-radius: 5px; 
+        cursor: pointer; }
+
+    #carrinho { 
+         margin-top: 20px;
+         padding: 10px;
+         background: #f1faee;
+         border-radius: 6px; }
+  
