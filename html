@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cardápio Simples</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f8f8f8; margin: 0; }
-    .container { max-width: 400px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #ddd; padding: 20px; }
-    h1 { text-align: center; color: #e63946; }
-    .item { margin-bottom: 20px; }
-    .nome { font-size: 1.1em; font-weight: bold; }
-    .preco { color: #e63946; }
-    button { background: #e63946; color: #fff; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; }
-    #carrinho { margin-top: 20px; padding: 10px; background: #f1faee; border-radius: 6px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    
   <div class="container">
     <h1>Cardápio</h1>
     <div class="item">
@@ -34,26 +26,6 @@
       Carrinho vazio.
     </div>
   </div>
-  <script>
-    let carrinho = [];
-    function adicionar(nome, preco) {
-      carrinho.push({ nome, preco });
-      mostrarCarrinho();
-    }
-    function mostrarCarrinho() {
-      if (carrinho.length === 0) {
-        document.getElementById('carrinho').innerText = 'Carrinho vazio.';
-        return;
-      }
-      let texto = 'Carrinho:<br>';
-      let total = 0;
-      carrinho.forEach(item => {
-        texto += `${item.nome} - R$ ${item.preco.toFixed(2)}<br>`;
-        total += item.preco;
-      });
-      texto += `<strong>Total: R$ ${total.toFixed(2)}</strong>`;
-      document.getElementById('carrinho').innerHTML = texto;
-    }
-  </script>
+  
 </body>
 </html>
